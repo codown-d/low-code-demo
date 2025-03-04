@@ -10,3 +10,9 @@ services:
       - ./lowCode:/usr/share/nginx/html
       - ./nginx.conf:/etc/nginx/nginx.conf
     restart: always
+
+    networks:
+      - low-code
+networks:
+  low-code:
+    name: low-code
